@@ -13,7 +13,7 @@ Uma aplicação simples de controle de livros desenvolvida em Flask, com suporte
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
+   git clone https://github.com/alan-vieira/api-rest-flask-mysql.git
    cd seu-projeto
 
 2. Crie e ative um ambiente virtual (opcional, mas recomendado):
