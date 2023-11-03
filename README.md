@@ -37,6 +37,8 @@ Uma aplicação simples de controle de livros desenvolvida em Flask, com suporte
    ```bash
    mysqlpass = "postgresql://seu-usuario:senha@localhost:5432/livros-api-rest"
 
+Certifique-se de que você tenha um banco de dados vazio chamado `livros-api-rest` configurado no PostgreSQL antes de prosseguir.
+
 6. Inicialize o banco de dados e execute as migrações:
 
    ```bash
@@ -55,11 +57,32 @@ A aplicação estará disponível em `http://localhost:5000`.
 
 A API permite gerenciar uma coleção de livros com as seguintes operações:
 
-- `POST /livros`: Adicionar um novo livro.
-- `GET /livros`: Consultar todos os livros.
-- `GET /livros/<ID>`: Consultar um livro por ID.
-- `PUT /livros/<ID>`: Atualizar um livro por ID.
-- `DELETE /livros/<ID>`: Excluir um livro por ID.
+- Adicionar um novo livro:
+
+   ```bash
+   curl.exe -X POST -H "Content-Type: application/json" -d '{"autor": "J.R.R Tolkien", "titulo": "O Senhor dos Anéis - A Sociedade do Anel"}' http://localhost:5000/livros
+
+   curl.exe -X POST -H "Content-Type: application/json" -d '{"autor": "J.K Howling", "titulo": "Harry Potter e a Pedra Filosofal"}' http://localhost:5000/livros
+  
+- Consultar todos os livros:
+
+   ```bash
+   curl.exe http://localhost:5000/livros
+  
+- Consultar um livro por ID:
+
+   ```bash
+   curl.exe http://localhost:5000/livros/4
+  
+- Atualizar um livro por ID:
+
+   ```bash
+   curl.exe -X PUT -H "Content-Type: application/json" -d '{"autor": "Clarice Lispector", "titulo": "Um Sopro de Vida"}' http://localhost:5000/livros/4
+  
+- Excluir um livro por ID:
+
+   ```bash
+   curl.exe -X DELETE http://localhost:5000/livros/4
 
 Você pode usar ferramentas como `curl` para interagir com a API. 
 
