@@ -64,3 +64,8 @@ A API permite gerenciar uma coleção de livros com as seguintes operações:
 Você pode usar ferramentas como `curl` para interagir com a API. 
 
 Consulte o README.md para exemplos de comandos `curl`.
+
+## Autor
+
+| [<img src="https://avatars.githubusercontent.com/alan-vieira" width=115><br><sub>Alan Vieira</sub>](https://github.com/alan-vieira) |
+| :---: |
