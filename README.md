@@ -65,6 +65,10 @@ Você pode usar ferramentas como `curl` para interagir com a API.
 
 Consulte o README.md para exemplos de comandos `curl`.
 
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](https://github.com/alan-vieira/api-rest-flask-mysql/blob/main/LICENSE) para detalhes.
+
 ## Autor
 
 | [<img src="https://avatars.githubusercontent.com/alan-vieira" width=115><br><sub>Alan Vieira</sub>](https://github.com/alan-vieira) |
