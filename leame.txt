@@ -1,0 +1,7 @@
+# extortar a variavel de ambiente
+export FLASK_APP=app.py
+
+# comando para criar a tabela do banco
+flask db init
+flask db migrate
+flask db upgrade
