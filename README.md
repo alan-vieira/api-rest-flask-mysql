@@ -27,7 +27,7 @@ Uma aplicação simples de controle de livros desenvolvida em Flask, com suporte
    ```bash
    pip install -r requirements.txt
 
-4. Configure a variável de ambiente `FLASK_APP` para `app.py´:
+4. Configure a variável de ambiente `FLASK_APP` para `app.py`:
 
    ```bash
    export FLASK_APP=app.py
