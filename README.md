@@ -50,3 +50,17 @@ Uma aplicação simples de controle de livros desenvolvida em Flask, com suporte
    flask run
 
 A aplicação estará disponível em `http://localhost:5000`.
+
+## Uso
+
+A API permite gerenciar uma coleção de livros com as seguintes operações:
+
+- `POST /livros`: Adicionar um novo livro.
+- `GET /livros`: Consultar todos os livros.
+- `GET /livros/<ID>`: Consultar um livro por ID.
+- `PUT /livros/<ID>`: Atualizar um livro por ID.
+- `DELETE /livros/<ID>`: Excluir um livro por ID.
+
+Você pode usar ferramentas como `curl` para interagir com a API. 
+
+Consulte o README.md para exemplos de comandos `curl`.
