@@ -21,3 +21,32 @@ Uma aplicação simples de controle de livros desenvolvida em Flask, com suporte
    ```bash
    python -m venv venv
    source venv/bin/activate  # No Windows: venv\Scripts\activate
+
+3. Instale as dependências:
+
+   ```bash
+   pip install -r requirements.txt
+
+4. Configure a variável de ambiente `FLASK_APP` para `app.py´:
+
+   ```bash
+   export FLASK_APP=app.py
+
+5. Configure sua conexão com o banco de dados PostgreSQL em `mysqlpass.py`. Exemplo:
+
+   ```bash
+   mysqlpass = "postgresql://seu-usuario:senha@localhost:5432/livros-api-rest"
+
+6. Inicialize o banco de dados e execute as migrações:
+
+   ```bash
+   flask db init
+   flask db migrate
+   flask db upgrade
+
+7. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   flask run
+
+A aplicação estará disponível em `http://localhost:5000`.
